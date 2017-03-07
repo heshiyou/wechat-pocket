@@ -55,6 +55,6 @@ def text_handler(msg):
 
 
 if __name__ == '__main__':
-    itchat.auto_login(enableCmdQR=True)
+    itchat.auto_login(enableCmdQR=2)
     itchat.run(debug=settings.DEBUG)
 
