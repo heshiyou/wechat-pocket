@@ -1,12 +1,16 @@
 # coding: utf-8
 
+import importlib
+import logging
+import os
 
 import itchat
-import logging
 import pocket
 
-import settings
 import robot
+settings_module = os.getenv("settings", "settings_default")
+settings = importlib.import_module(settings_module)
+
 
 
 logger = logging.getLogger('wechat-pocket')
@@ -26,7 +30,7 @@ def sharing_handler(msg):
         pocket_instance = pocket.Pocket(consumer_key=settings.CONSUMER_KEY, access_token=settings.ACCESS_TOKEN)
         resp = pocket_instance.add(url)
         logger.debug(resp)
-        answer = '[OK]✌️ saved successful!'
+        answer = '✌️ saved successful!'
     return answer
 
 

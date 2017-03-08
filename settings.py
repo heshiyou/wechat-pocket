@@ -1,8 +1,0 @@
-# coding: utf-8
-
-DEBUG = False
-
-CONSUMER_KEY = '52078-53abd753c3060430586b80e6'
-ACCESS_TOKEN = 'd270993c-932c-5b33-8aeb-1b1a8e'
-
-TULING_KEY = 'c00c7d2a9612ba2d252f1ed014df60ec'
