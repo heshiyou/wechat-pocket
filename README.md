@@ -1,7 +1,7 @@
 A Wechat personal account based assistant designed for saving the article sharing it received to pocket.
 
 ## How to use
-
+![](https://raw.githubusercontent.com/heshiyou/wechat-pocket/master/wechat-pocket-shots.jpg)
 ### Step 1:
 
 add settings.py for your own to set tuling api token and pocket token.
